@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+label { display: block; }
+
+.mt1 { margin-top: 0.5rem; }
+.mt2 { margin-top: 1rem; }
+
+.ml1 { margin-left: 0.5rem; }
+.ml2 { margin-left: 1rem; }
+
+.mr1 { margin-right: 0.5rem; }
+.mr2 { margin-right: 1rem; }
+
+.form-error {
+  color: red;
+}
+
+.btn-danger {
+  background: white;
+  color: red;
+  border: 1px solid red;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card {
+  border: 1px solid rgba(0,0,0,0.125);
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.product-card p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

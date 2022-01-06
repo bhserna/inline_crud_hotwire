@@ -1,0 +1,7 @@
+= turbo_frame_tag product do
+  .product-card
+    %h3= product.name
+    %p= product.description
+    .product-actions
+      = link_to "Edit", edit_product_path(product), class: "mr2", data: { turbo_frame: dom_id(product) }
+      = button_to "Delete", product, method: :delete, class: "btn-danger", form: { data: { turbo_confirm: "Are you sure?" } }
