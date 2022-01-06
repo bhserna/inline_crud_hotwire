@@ -1,6 +1,11 @@
-# Inline crud with rails and hotwire
+# Inline CRUD with rails and hotwire
 
-This is an example ruby on rails app that shows how you can build "remote modals" (where the content is requested to the server), submit forms and handle erors, using Hotwire and bootstrap.
+This is an example ruby on rails app that shows how you can build an "inline CRUD"
+using Ruby on Rails and Hotwire.
+
+Something like in the next video:
+
+[Inline CRUD rails and hotwire](https://www.loom.com/share/d3cae370e9fa44109daa5afa67285575)
 
 ## Versions
 
@@ -8,10 +13,3 @@ This is an example ruby on rails app that shows how you can build "remote modals
 * Rails: 7.0.0
 * Turbo rails: 1.0.0
 * Stimulus rails: 1.0.2
-* Bootstrap: 5.1.3
-
-## Video
-
-Here is a video showing the example:
-
-[Remote modals with Hotwire and Bootstrap](https://www.loom.com/share/bcc3514ebafc4665874098bf8386cd1f)
