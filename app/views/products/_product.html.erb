@@ -1,0 +1,10 @@
+<%= turbo_frame_tag product do %>
+  <div class="product-card">
+    <h3><%= product.name %></h3>
+    <p><%= product.description %></p>
+    <div class="product-actions">
+      <%= link_to "Edit", edit_product_path(product), class: "mr2", data: { turbo_frame: dom_id(product) } %>
+      <%= button_to "Delete", product, method: :delete, class: "btn-danger", form: { data: { turbo_confirm: "Are you sure?" } } %>
+    </div>
+  </div>
+<% end %>

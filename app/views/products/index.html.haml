@@ -1,7 +1,0 @@
-.products-header
-  %h1 Products
-  %div= link_to "New product", new_product_path, data: { turbo_frame: "new_product" }
-
-= turbo_frame_tag "new_product", target: "_top"
-
-= render @products

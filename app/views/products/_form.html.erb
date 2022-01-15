@@ -1,0 +1,20 @@
+<div class="product-card">
+  <%= form_with model: product do |f| %>
+    <div>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      <%= errors_for product, :name %>
+    </div>
+
+    <div class="mt2">
+      <%= f.label :description %>
+      <%= f.text_area :description %>
+      <%= errors_for product, :description %>
+    </div>
+
+    <div class="mt2">
+      <%= f.button %>
+      <%= link_to "Cancel", products_path, class: "ml2" %>
+    </div>
+  <% end %>
+</div>
